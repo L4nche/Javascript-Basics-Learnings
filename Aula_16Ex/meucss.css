@@ -1,0 +1,129 @@
+/*----------------------- BODY -------------------*/
+body{
+    background-color: #222222;
+    width: 100%;
+    
+}
+/*----------------------- HEADER -------------------*/
+header{
+    color: whitesmoke;
+    margin: auto;
+    text-align: center;
+    font: normal 18pt Arial;
+    font-weight: 600;
+}
+/*----------------------- SECTION -------------------*/
+section{
+    background-color: whitesmoke;
+    margin: auto;
+    width: 40%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px rgba(0  , 0, 0, 0.5);
+    
+}
+/*---------- div1 ---------*/
+div{
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    
+}
+div p#p1 {
+    font: normal 10pt Arial;
+    color:whitesmoke;
+    background-color: rgb(26, 137, 228);
+    max-width: 230px; 
+    width: 70%;
+    margin: auto;
+    padding: 7px;
+    margin-top: 15px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgba(0  , 0, 0, 0.5);
+}
+div input{
+    width: auto;
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px rgba(0  , 0, 0, 0.5);
+}
+div input#numero{
+    width: 70%;
+    max-width: 225px;
+    font: normal 20pt Arial;
+    color:  rgb(26, 137, 228);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 7px;
+    outline: none;
+    border-style: solid;
+    border-color: rgb(74, 156, 78);
+}
+
+input[type=button]{
+    color: whitesmoke;
+    border-style: none;
+    border-radius: 10px;
+    font: normal 18pt Arial;
+    outline: none;
+    transition: 0.3s;
+}
+
+input#botaoadicionar{
+    background-color: rgb(26, 137, 228); 
+}
+input#botaoanalisar{
+    background-color: rgb(74, 156, 78);
+}
+
+input#botaoadicionar:hover{
+    background-color: rgb(18, 94, 156); 
+}
+input#botaoanalisar:hover{
+    background-color: rgb(51, 109, 53);
+}
+/*---------- lista---------*/
+
+select{
+ 
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    
+}
+select option{
+    color: whitesmoke;
+    font-weight: 600;
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+/*---------- div2 ---------*/
+
+div#resultado{
+    padding-bottom: 15px;
+    font: normal 12pt Arial;
+    
+}
+
+
+/*----------------------- FOOTER -------------------*/
+footer{
+    width: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer p a{
+    color: whitesmoke;
+    font-style: none;
+    font: normal 12pt Arial;
+    font-weight: 600;
+    
+}
