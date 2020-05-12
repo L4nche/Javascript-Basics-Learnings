@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamo lá</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            background-color: orange;
+        
+            color: white;
+            
+        }
+        strong{
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        /*
+        window.alert("Vamos calcular o seu IMC - ou então ÍNDICE DE MICROPENIS COMUM")
+        var nome = window.prompt("Primeiro me diga o seu nome!")
+        var confirmacaonome = window.confirm(`Só para confirmar. Seu nome é ${nome}?`)
+        var altura = Number(window.prompt("Agora me diga quanto de altura você têm"))
+        var confirmacaopeso = window.confirm(`Mais uma vez, confirmação!!!!. Você tem ${altura} de altura?`)
+        var peso =  Number(window.prompt("E pra finalizar, me diga seu peso"))
+        var confirmacaopeso = window.confirm(`Última vez, prometo. Você pesa ${peso}KG?`)
+
+        window.alert("Então aqui está os dados!")
+
+        var imc = peso / (altura ** 2)
+
+        document.write(`Nome: <strong> ${nome} </strong> <br/>`)
+        document.write(`IMC: <strong> ${imc} </strong>   <br/>`)
+        
+        
+
+        if (imc < 20) {
+            document.write("Você está abaixo do peso!<br/>")
+      
+        }
+        if (imc > 20 && imc < 24){
+            document.write("Você está com o peso ideial!<br/>")
+         
+        }
+        if (imc > 24) {
+            document.write("Você está acima do peso!<br/>")
+           
+        }
+        */
+
+        var nome = window.prompt("Primeiro me diga o seu nome!")    //pega teu nome
+        var idade = Number(window.prompt("Agora sua idade, quantos aninhos você tem?")) //pega tua idade
+        var salario = Number(window.prompt("Quanto que você ganha? Seu salário!"))  // pega teu salario
+
+        window.alert("Vamos analisar a tua condição e lhe mostrar aqui") // apresentaçãozinha mecetréfe 
+
+        document.write(`Seu nome é <strong>${nome}</strong>!  <br/>`) // mostra teu nome
+
+        var semsalario = salario == 0? true : false  //verifica se você ganha salario ou não
+
+        if (semsalario) {
+            document.write("Você não recebe salário")
+        }else{
+
+        var condicao = idade <= 20 && salario >= 2500?  `Você ganha <strong>${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})} </strong>? Que isso bicho, tu ganha bem demais pra tua idade`: `Seu salário é de <strong>${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</strong>, continue firme!`
+        document.write(condicao)
+
+        }
+        
+
+    </script>
+
+</body>
+</html>
