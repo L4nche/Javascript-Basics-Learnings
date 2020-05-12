@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de Origem</title>
+</head>
+<body>
+    <h1>Nacionalidade!</h1>
+
+    Nos diga aos você nasceu:<input type="text" name="regiao" id="local">
+    <input type="button" value="Confirmar" onclick="confirmacao()">
+
+    <div id="origem"></div>
+
+    <script>
+        
+            function confirmacao() {
+                var nacio = window.document.querySelector('input#local')
+                var resorigem = document.querySelector('div#origem')
+                var nacionalidade = (nacio.value)
+                resorigem.innerHTML = ` <p>Você nasceu no <strong>${nacionalidade} </strong>!</p>`
+                if (nacionalidade == "Brasil") {
+                    resorigem.innerHTML += `Logo você é <strong>brasileiro</strong>!`
+                }else{
+                    resorigem.innerHTML += `Então você não é Brasileiro... você entende o que está escrito?`
+                }
+            }
+            
+        
+    </script>
+    
+</body>
+</html>
